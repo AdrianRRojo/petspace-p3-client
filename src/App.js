@@ -20,6 +20,8 @@ import EditComment from './components/pages/EditComment'
 import EditPost from './components/pages/EditPost'
 import EditProfile from './components/pages/EditProfile'
 
+
+
 function App() {
   // the currently logged in user will be stored up here in state
   const [currentUser, setCurrentUser] = useState(null)
@@ -76,7 +78,7 @@ function App() {
           {/* conditionally render auth locked routes */}
           <Route 
             path="/:username"
-            element={currentUser ? <Profile handleLogout={handleLogout} currentUser={currentUser} setCurrentUser={setCurrentUser} /> : <Navigate to="/login" />}
+            element={currentUser ? <Profile handleLogout={handleLogout} currentUser={currentUser} setCurrentUser={setCurrentUser} /> : <Navigate to="/" />}
           />
 
 
