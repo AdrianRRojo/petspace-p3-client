@@ -20,6 +20,7 @@ https://euphonious-parfait-40c859.netlify.app/posts
 - Mongoose
 - bcrypto
 - jwt
+- Cloudinary
 
 ## Installation Instruction
 
